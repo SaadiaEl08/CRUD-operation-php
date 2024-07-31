@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: rgb(73, 209, 209);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+/* header*/
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    background-color: white;
+  }
+  nav > img {
+    height: 100%;
+    width: 10%;
+    padding-left: 20px;
+  }
+  nav > ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 70%;
+    list-style: none;
+  }
+  nav a {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: rgb(61, 183, 183);
+    transition: 0.7s;
+  }
+  nav  a:hover {
+    text-decoration: underline;
+    color: black;
+    transform: scale(1.1);
+  }
+ nav a:focus{
+    text-decoration: underline;
+    color: black;
+}
+/*footer*/
+footer{
+    display:flex;
+    align-items: center;
+    height: 5vh;
+    font-weight:900;
+    color: rgb(61, 183, 183);
+    background-color: white;
+    padding-left: 40px;
+
+}
+/*accuel*/
+p{
+  font-size: 1.8rem;
+}
+/*constantes*/
+.flex,.flex-between{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.flex-between{
+  justify-content: space-between;
+  width:30vw;
+  flex-direction: row;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+main{
+ min-height: 85vh;
+}
+.div{
+  background-color: #fff;
+  padding: 2rem;
+  border-radius:3rem ;
+  margin-top:10px;
+  margin-bottom:10px;
+
+}
+.pm{
+  margin: 4px;
+  padding: 4px;
+}
+/*forms*/
+input{
+  width: 20vw;
+}
+input[type="submit"]{
+ cursor: pointer;
+ width: 10vw;
+ border-radius: 20px;
+ transition: 1s;
+ margin:auto;
+}
+input[type="submit"]:hover{
+  letter-spacing: 2px;
+}
+span{
+  color: red;
+  font-size: 0.8rem;
+  font-weight: 900;
+  margin: 4px;
+}
+label::after{
+  content: "*";
+  color: red;
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+/*lister*/
+table,td,tr,th{
+    border: 2px solid black;
+    border-collapse: collapse;
+
+}
+
+div>a{
+    font-size: large;
+    padding: 4px;
+    margin: 7px;
+    background-color: aqua;
+    border-radius:3rem ;
+    transition: 1s;
+
+}
+div>a:hover{
+    background-color: green;
+    color: white;
+    transform: scale(1.1);
+
+}
+thead{
+    background-color: aqua;
+}
+td,th{
+    min-width:5rem;
+    text-align: center;
+    padding:5px;
+}
+.supprimer{
+    background-color: rgb(244, 73, 73);
+    color: white;
+}
+.modifier{
+    background-color: rgb(87, 230, 87);
+}
+.info{
+    background-color: rgb(97, 97, 234);
+    color: white;
+}
